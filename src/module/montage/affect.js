@@ -1,9 +1,9 @@
-const jimp = require(`jimp`);
+const jimp = require(`jimp-compact`);
 
 module.exports = class Affect {
     /**
      * Affect
-     * @param {image} image 
+     * @param {image} image
      */
     async getImage(image) {
         if (!image) throw new Error(`You must provide an image as a first argument.`);

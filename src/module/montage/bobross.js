@@ -15,6 +15,11 @@ module.exports = class Bobross {
         ctx.fillRect(0, 0, base.width, base.height);
         ctx.drawImage(image1, 15, 20, 440, 440);
         ctx.drawImage(base, 0, 0);
+        ctx.textAlign = `center`;
+        ctx.textBaseline = 'middle';
+        ctx.font = `35px sans-serif`;
+        ctx.fillText('We don\'t make mistakes,', base.width/2, base.height-80);
+        ctx.fillText('we just have happy accidents.', base.width/2, base.height-30);
         return canvas.toBuffer();
     }
 };
